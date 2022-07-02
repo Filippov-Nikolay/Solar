@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+@import url('normalize.css');
+@import url('header.css');
+@import url('section.css');
+@import url('footer.css');
+@import url('mobile.css');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}

@@ -99,8 +99,11 @@
 .slider-bottons {
     display: flex;
 }
-.slider-button {
-    
+.slider-button path {
+    transition: all .3s ease;
+}
+.slider-button:hover path{
+    fill: #A9A32A;
 }
 .slider-button:not(:last-child) {
     margin-right: 20px;

@@ -1,0 +1,40 @@
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1140px;
+
+        /* background-color: red; */
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+	
+        /* background-color: green; */
+    }
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+
+        /* background-color: purple; */
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+
+        /* background-color: orange; */
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		padding: 0 10px;
+		width: 90%;
+
+        /* background-color: pink; */
+	}
+}

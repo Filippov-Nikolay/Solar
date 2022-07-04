@@ -75,12 +75,17 @@
     padding-top: 160px;
     padding-bottom: 50px;
 }
-.header__social-item {
-    transition: all .5s ease;
-}
-.header__social-item:not(:last-child) {
+.social__list:not(:last-child) {
     margin-right: 20px;
 }
-.header__social-item:hover {
-    transform: translateY(-5px);
+.social__list:hover .social__link {
+    transform: translateY(-10px);
+}
+.social__link {
+    display: block;
+    transition: all .5s ease;
+}
+.social__img {
+    max-width: 30px;
+    max-height: 30px;
 }

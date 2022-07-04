@@ -1,10 +1,8 @@
 .header {
+    min-height: 100vh;
+    background: url('../img/header/bg.jpg') no-repeat center top/cover;
     text-align: center;
     color: #FFFFFF;
-}
-.header__bg {
-    background: url('../img/header/bg.jpg') no-repeat center top/cover;
-    min-height: 100vh;
 }
 .header__wrapper {
     display: flex;

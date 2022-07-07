@@ -20,6 +20,80 @@
 
         /* background-color: purple; */
 	}
+
+	.section__wrapper {
+		align-items: center;
+	}
+
+	.service__wrapper {
+		flex-direction: column;
+	}
+
+	.section__text {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-right: 0;
+	}
+
+	.section__text-item {
+		margin-bottom: 50px;
+	}
+
+	.section__text-item:not(:last-child) {
+		flex-basis: 200px;
+	}
+
+	.section__img {
+		max-width: 600px;
+	}
+
+	.rate__items {
+		display: block;
+	}
+
+	.rate__item:not(:last-child) {
+		margin-bottom: 50px;
+	}
+
+	.rate__img {
+		margin: 0 auto;
+	}
+
+	.slider-bottons {
+		justify-content: start;
+	}
+
+	.clients__wrapper {
+		flex-direction: column;
+	}
+
+	.clients__information {
+		margin-top: 50px;
+		margin-left: 0;
+	}
+	.clients__information-title,
+	.clients__information-about {
+		text-align: start;
+	}
+	.clients__information {
+		text-align: center;
+	}
+	.steps__wrapper {
+		flex-direction: column;
+	}
+	.steps__wrapper .steps__item {
+		margin-right: 0;
+	}
+	.steps__item-inforamtion {
+		display: flex;
+    	flex-wrap: wrap;
+	}
+	.steps__item-block {
+		padding: 0 30px 40px 0;
+		margin-right: 0;
+		flex-basis: 170px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -27,6 +101,34 @@
 		width: 540px;
 
         /* background-color: orange; */
+	}
+
+	.header__descr {
+		font-size: 16px;
+	}
+	.header__title {
+		font-size: 40px;
+	}
+	.header__subtitle {
+		font-size: 36px;
+	}
+	.button {
+		font-size: 16px;
+	}
+	.section__text {
+		display: block;
+	}
+	.footer__wrapper {
+		display: block;
+	}
+	.footer__title {
+		padding: 60px 0;
+	}
+	.footer__info {
+		text-align: center;
+	}
+	.copyright-text {
+		padding-bottom: 15px;
 	}
 }
 
@@ -36,5 +138,75 @@
 		width: 90%;
 
         /* background-color: pink; */
+	}
+	.header__descr {
+		font-size: 14px;
+	}
+	.header__title {
+		font-size: 32px;
+	}
+	.header__subtitle {
+		font-size: 24px;
+	}
+	.button::before {
+		position: static;
+		margin: 0 auto 10px;
+		width: 80px;
+		height: 80px;
+	}
+	.rate__items .rate__item {
+		margin-right: 0;
+	}
+	.menu {
+		display: block;
+	}
+	.menu__list:not(:last-child) {
+		margin: 0 0 10px;
+	}
+	.rate__nav {
+		padding-bottom: 80px;
+	}
+	.rate__slider {
+		display: block;
+	}
+	.rate__slider-inner {
+		padding-top: 15px;
+	}
+	.slider-bottons {
+		padding-top: 10px;
+	}
+	.rate__text-item {
+		padding-right: 5px;
+	}
+	.rate__text-title {
+		font-size: 18px;
+	}
+	.rate__text-paragraph {
+		font-size: 13px;
+	}
+	.rate__description {
+		font-size: 16px;
+	}
+	.advertising__title {
+		font-size: 24px;
+	}
+	.clients__information-about {
+		padding-left: 0;
+	}
+	.clients__btn {
+		margin-top: 90px;
+		margin-left: 0;
+	}
+	.steps__item-inforamtion {
+		justify-content: center;
+	}
+	.footer__item:not(:last-child) {
+		margin-right: 0;
+	}
+	.form__input {
+		width: 100%;
+	}
+	.footer__btn {
+		margin: 0;
 	}
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="section__content">
                     <h2 class="title section__title">Услуги</h2>
-                    <div class="section__wrapper">
+                    <div class="section__wrapper service__wrapper">
                         <div class="section__text">
                             <div class="section__text-item">
                                 <h3 class="section__item-title">Полный комплект солнечной электростанции</h3>
@@ -67,7 +67,7 @@
                         <div class="rate__item">
                             <div class="rate__nav">
                                 <ul class="menu rate__menu">
-                                    <li class="menu__list"><a href="#" class="menu__link">продажа</a></li>
+                                    <li class="menu__list"><a href="#" class="menu__link menu__link--active">продажа</a></li>
                                     <li class="menu__list"><a href="#" class="menu__link">закрепление</a></li>
                                     <li class="menu__list"><a href="#" class="menu__link">ограничения</a></li>
                                 </ul>
@@ -136,7 +136,7 @@
             <div class="container">
                 <div class="section__content">
                     <h2 class="title section__title">наши клиенты</h2>
-                    <div class="section__wrapper">
+                    <div class="section__wrapper clients__wrapper">
                         <div class="clients__slider">
                             <img src="img/section-clients/img01.jpg" alt="" class="clients__img">
                             <div class="slider-bottons clients__buttons">
@@ -169,7 +169,7 @@
         <section class="section steps">
             <div class="container">
                 <div class="section__content">
-                    <div class="section__wrapper">
+                    <div class="section__wrapper steps__wrapper">
                         <div class="steps__item">
                             <h2 class="title section__title steps__title">5 шагов к собственной электростанции</h2>
                             <div class="steps__item-inforamtion">
@@ -213,9 +213,9 @@
             <div class="footer__content footer__wrapper">
                 <div class="footer__item">
                     <h2 class="footer__title">Оставить заявку</h2>
-                    <form class="form" action="" method="GET">
-                        <input class="form__input" type="text" placeholder="Имя" required>
-                        <input class="form__input" type="text" placeholder="Телефон" required>
+                    <form class="form" action="php/email.php" method="GET">
+                        <input class="form__input" type="text" placeholder="Имя" name="name" required>
+                        <input class="form__input" type="text" placeholder="Телефон" name="phone" required>
                         <button class="button footer__btn"><span class="button__span">оставить заявку</span></button>
                     </form>
                 </div>
@@ -250,12 +250,12 @@
                 <div class="logo footer__logo">
                     <a class="logo__link" href="#"><img class="logo__img" src="img/logo.svg" alt=""></a>
                 </div>
-                <div class="social footer__social">
-                    <a href="#" class="header__social-item"><img src="img/header/instagram.svg" alt="instagram"></a>
-                    <a href="#" class="header__social-item"><img src="img/header/telegram.svg" alt="telegram"></a>
-                    <a href="#" class="header__social-item"><img src="img/header/whatsapp.svg" alt="whatsapp"></a>
-                    <a href="#" class="header__social-item"><img src="img/header/facebook.svg" alt="facebook"></a>
-                </div>
+                <ul class="social footer__social">
+                    <li class="social__list"><a class="social__link" href="#"><img class="social__img" src="img/header/instagram.svg" alt="instagram"></a></li>
+                    <li class="social__list"><a class="social__link" href="#"><img class="social__img" src="img/header/telegram.svg" alt="telegram"></a></li>
+                    <li class="social__list"><a class="social__link" href="#"><img class="social__img" src="img/header/whatsapp.svg" alt="whatsapp"></a></li>
+                    <li class="social__list"><a class="social__link" href="#"><img class="social__img" src="img/header/facebook.svg" alt="facebook"></a></li>
+                </ul>
             </div>
         </div>
     </footer>

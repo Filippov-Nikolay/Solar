@@ -15,8 +15,9 @@
 .header__logo {
     padding-top: 50px;
 }
-/* .logo__link {
-} */
+.logo__link {
+    display: inline-block;
+}
 .logo__img {
     margin: 0 auto;
 }
@@ -79,7 +80,7 @@
     margin-right: 20px;
 }
 .social__list:hover .social__link {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 .social__link {
     display: block;

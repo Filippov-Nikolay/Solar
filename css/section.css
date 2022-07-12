@@ -84,6 +84,12 @@
     display: flex;
     padding-bottom: 70px;
 }
+.rate__slider-content {
+    display: none;
+}
+.rate__slider-content--active {
+    display: block;
+}
 .rate__slider-img {
     margin-right: 40px;
     max-width: 235px;

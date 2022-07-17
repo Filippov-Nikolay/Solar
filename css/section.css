@@ -102,9 +102,6 @@
 }
 .slick-prev {
 }
-
-
-
 .tab-about {
 }
 .tab-about__slider {
@@ -164,17 +161,13 @@
 }
 
 /* clients */
-.clients__slider {
+.clients-slider {
     max-width: 510px;
 }
 .clients__img {
 }
-.slider-bottons {
-    justify-content: end;
-    margin-right: 130px;
-}
-.clients__buttons {
-    padding-top: 30px;
+.clients-arrow {
+    bottom: -30px;
 }
 .clients__information {
     margin-left: 90px;

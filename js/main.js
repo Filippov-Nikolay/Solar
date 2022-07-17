@@ -1,5 +1,5 @@
 let linkList = document.querySelectorAll('.menu__link');
-let sliderContent = document.querySelectorAll('.rate__slider-content');
+let sliderContent = document.querySelectorAll('.rate__tab-content');
 
 linkList.forEach(link => {
     link.addEventListener('click', function(e) {
@@ -13,10 +13,16 @@ linkList.forEach(link => {
         let hrefValue = link.getAttribute('href');
         let content = document.querySelector(hrefValue);
         sliderContent.forEach(content => {
-            content.classList.remove('rate__slider-content--active');
+            content.classList.remove('rate__tab-content--active');
         });
-        content.classList.add('rate__slider-content--active');
+        content.classList.add('rate__tab-content--active');
     });
 });
 
 document.querySelector('.menu__link').click();
+
+$(function() {
+    $('.tab-about__slider').slick({
+
+    });
+}); 

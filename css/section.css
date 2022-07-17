@@ -45,102 +45,56 @@
 .rate {
     color: #303030;
 }
-.section__content {
-}
-.rate__items {
-    align-items: stretch;
-}
-.rate__item {
-}
-.rate__item:not(:last-child) {
-    flex-basis: 510px;
-    margin-right: 90px;
-}
-.rate__nav {
-    padding-bottom: 125px;
-}
-.menu {
+
+.rate__about {
     display: flex;
 }
-.rate__menu {
+.rate__item:not(:last-child) {
+    max-width: 500px;
 }
-.menu__list:not(:last-child) {
-    margin-right: 40px;
+.menu {
+}
+.rate__menu {
+    display: flex;
+    column-gap: 40px;
+}
+.menu__item {
 }
 .menu__link {
-    color: #303030;
     font-size: 18px;
-    border-bottom: 1px solid #30303000;
     text-transform: lowercase;
+    border-bottom: 1px solid #30303000;
     transition: all .5s ease;
-}
-.menu__link--active {
-    border-bottom: 1px solid #303030;
 }
 .menu__link:hover {
     border-bottom: 1px solid #303030;
 }
-.rate__slider {
-    display: flex;
-    padding-bottom: 70px;
-}
-.rate__slider-content {
+.rate__tab-content {
     display: none;
 }
-.rate__slider-content--active {
+.rate__tab-content--active {
     display: block;
 }
-.rate__slider-img {
-    margin-right: 40px;
-    max-width: 235px;
-    max-height: 200px;
+.tab-about {
 }
-.rate__slider-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.tab-about__slider {
 }
-.rate__slider-text {
+.tab-about__item {
 }
-.rate__slider-paragraph {
-}
-.slider-bottons {
+.slick-initialized .slick-slide {
     display: flex;
 }
-.slider-button path {
-    transition: all .3s ease;
+.tab-content__img {
 }
-.slider-button:hover path{
-    fill: #A9A32A;
+.tab-content__inner {
 }
-.slider-button:not(:last-child) {
-    margin-right: 20px;
+.tab-content__info {
 }
-.rate__text-items {
-    display: flex;
-    flex-wrap: wrap;
+.tab-content__text {
 }
-.rate__text-item {
-    width: 50%;
+.rate__item-title {
 }
-.rate__text-item {
-    padding-right: 40px;
-}
-.rate__text-item:not(:nth-last-child(-n+2)) {
-    padding-bottom: 15px;
-}
-.rate__text-title {
-}
-.rate__texts {
-}
-.rate__text-paragraph {
-    font-size: 14px;
-}
-.rate__description {
-    padding-bottom: 20px;
-    font-size: 18px;
-}
-.rate__img {
+.rate__item-img {
 }
 
 /* advertising */

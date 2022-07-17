@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo-icon.png" type="image/png">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Solar</title>
 </head>
@@ -63,107 +64,81 @@
             <div class="container">
                 <div class="section__content">
                     <h2 class="title section__title">Зеленый тариф</h2>
-                    <div class="section__wrapper rate__items">
+                    <div class="rate__about">
                         <div class="rate__item">
-                            <div class="rate__nav">
-                                <ul class="menu rate__menu">
-                                    <li class="menu__list"><a class="menu__link" href="#tab-1">продажа</a></li>
-                                    <li class="menu__list"><a class="menu__link" href="#tab-2">закрепление</a></li>
-                                    <li class="menu__list"><a class="menu__link" href="#tab-3">ограничения</a></li>
-                                </ul>
-                            </div>
-                            <div class="rate__slider">
-                                <div id="tab-1" class="rate__slider-content">
-                                    <img class="rate__slider-img" src="img/section-rate/img01.jpg" alt="">
-                                    <div class="rate__slider-inner">
-                                        <div class="rate__slider-text">
-                                            <p class="rate__slider-paragraph">Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                            <ul class="menu rate__menu">
+                                <li class="menu__item"><a href="#tab1" class="menu__link">продажа</a></li>
+                                <li class="menu__item"><a href="#tab2" class="menu__link">закрепление</a></li>
+                                <li class="menu__item"><a href="#tab3" class="menu__link">ограничения</a></li>
+                            </ul>
+                            <div class="rate__tab-content" id="tab1">
+                                <div class="tab-about tab-about__slider">
+                                    <div class="tab-about__item">
+                                        <div class="tab-content__img">
+                                            <img src="img/section-rate/img01.jpg" alt="img-home">
                                         </div>
-                                        <div class="slider-bottons">
-                                            <button class="slider-button">
-                                                <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0.646446 3.64645C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM41 3.5L1 3.5V4.5L41 4.5V3.5Z" fill="#303030"/>
-                                                </svg>
-                                            </button>
-                                            <button class="slider-button">
-                                                <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z" fill="#303030"/>
-                                                </svg>
-                                            </button>
+                                        <div class="tab-content__inner">
+                                            <div class="tab-content__info">
+                                                <p class="tab-content__text">(Продажа). Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div id="tab-2" class="rate__slider-content">
-                                    <img class="rate__slider-img" src="img/section-rate/img01.jpg" alt="">
-                                    <div class="rate__slider-inner">
-                                        <div class="rate__slider-text">
-                                            <p class="rate__slider-paragraph">CONTENT 2 Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                                    <div class="tab-about__item">
+                                        <div class="tab-content__img">
+                                            <img src="img/section-rate/img01.jpg" alt="img-home">
                                         </div>
-                                        <div class="slider-bottons">
-                                            <button class="slider-button">
-                                                <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0.646446 3.64645C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM41 3.5L1 3.5V4.5L41 4.5V3.5Z" fill="#303030"/>
-                                                </svg>
-                                            </button>
-                                            <button class="slider-button">
-                                                <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z" fill="#303030"/>
-                                                </svg>
-                                            </button>
+                                        <div class="tab-content__inner">
+                                            <div class="tab-content__info">
+                                                <p class="tab-content__text">(Продажа). Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div id="tab-3" class="rate__slider-content">
-                                    <img class="rate__slider-img" src="img/section-rate/img01.jpg" alt="">
-                                    <div class="rate__slider-inner">
-                                        <div class="rate__slider-text">
-                                            <p class="rate__slider-paragraph">CONTENT 3 Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                                    <div class="tab-about__item">
+                                        <div class="tab-content__img">
+                                            <img src="img/section-rate/img01.jpg" alt="img-home">
                                         </div>
-                                        <div class="slider-bottons">
-                                            <button class="slider-button">
-                                                <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0.646446 3.64645C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM41 3.5L1 3.5V4.5L41 4.5V3.5Z" fill="#303030"/>
-                                                </svg>
-                                            </button>
-                                            <button class="slider-button">
-                                                <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z" fill="#303030"/>
-                                                </svg>
-                                            </button>
+                                        <div class="tab-content__inner">
+                                            <div class="tab-content__info">
+                                                <p class="tab-content__text">(Продажа). Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="rate__text-items">
-                                <div class="rate__text-item">
-                                    <h2 class="rate__text-title">Гарантия выкупа</h2>
-                                    <div class="rate__texts">
-                                        <p class="rate__text-paragraph">Гарантированный выкуп электроэнергии государством - прописано в НКРЕ №447 </p>
+                            <div class="rate__tab-content" id="tab2">
+                                <div class="tab-about">
+                                    <div class="tab-about__item">
+                                        <div class="tab-content__img">
+                                            <img src="img/section-rate/img01.jpg" alt="img-home">
+                                        </div>
+                                        <div class="tab-content__inner">
+                                            <div class="tab-content__info">
+                                                <p class="tab-content__text">(Продажа). Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="rate__text-item">
-                                    <h2 class="rate__text-title">Долгосрочно</h2>
-                                    <div class="rate__texts">
-                                        <p class="rate__text-paragraph">это проект, поддерживаемый международными инвестиционными организациями</p>
-                                    </div>
-                                </div>
-                                <div class="rate__text-item">
-                                    <h2 class="rate__text-title">Вид вложения</h2>
-                                    <div class="rate__texts">
-                                        <p class="rate__text-paragraph">Альтернатива банковским депозитам, окупаемость - от 16% до 18% годовых</p>
-                                    </div>
-                                </div>
-                                <div class="rate__text-item">
-                                    <h2 class="rate__text-title">Высокая ставка</h2>
-                                    <div class="rate__texts">
-                                        <p class="rate__text-paragraph">Самая высокая тарифная ставка в европе - 0,16 евро</p>
+                            </div>
+                            <div class="rate__tab-content" id="tab3">
+                                <div class="tab-about">
+                                    <div class="tab-about__item">
+                                        <div class="tab-content__img">
+                                            <img src="img/section-rate/img01.jpg" alt="img-home">
+                                        </div>
+                                        <div class="tab-content__inner">
+                                            <div class="tab-content__info">
+                                                <p class="tab-content__text">(Продажа). Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="rate__item">
-                            <h2 class="rate__description">«Зеленый тариф» — это особые тарифные условия, которые позволяют частным домохозяйствам  не только потреблять, но и продавать выработанное домашними солнечными электростанциями электричество в электросеть общего пользования.</h2>
-                            <img src="img/section-rate/img1.jpg" alt="rate-img" class="rate__img">
+                            <h2 class="rate__item-title">«Зеленый тариф» — это особые тарифные условия, которые позволяют частным домохозяйствам  не только потреблять, но и продавать выработанное домашними солнечными электростанциями электричество в электросеть общего пользования.</h2>
+                            <div class="rate__item-img">
+                                <img src="img/section-rate/img1.jpg" alt="rate-img-car">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -302,6 +277,8 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

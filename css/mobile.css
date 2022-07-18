@@ -48,8 +48,8 @@
 		max-width: 600px;
 	}
 
-	.rate__items {
-		display: block;
+	.rate__about {
+		flex-direction: column;
 	}
 
 	.rate__item:not(:last-child) {
@@ -139,6 +139,9 @@
 
         /* background-color: pink; */
 	}
+	.clients-slider {
+		max-width: 250px;
+	}
 	.header__descr {
 		font-size: 14px;
 	}
@@ -158,8 +161,23 @@
 		margin-right: 0;
 	}
 	.menu {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
 	}
+	.tab-about__item {
+		flex-direction: column;
+		row-gap: 10px;
+	}
+	.slick-arrow {
+		left: 50%;
+		bottom: 105px;
+		transform: translateX(-50%);
+	}
+	.clients-arrow {
+		bottom: -30px;
+	}
+	
 	.menu__list:not(:last-child) {
 		margin: 0 0 10px;
 	}
@@ -194,7 +212,7 @@
 		padding-left: 0;
 	}
 	.clients__btn {
-		margin-top: 90px;
+		margin-top: 40px;
 		margin-left: 0;
 	}
 	.steps__item-inforamtion {

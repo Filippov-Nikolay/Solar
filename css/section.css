@@ -51,10 +51,7 @@
     justify-content: space-between;
     column-gap: 40px;
 }
-.rate__item:not(:last-child) {
-    max-width: 600px;
-}
-.rate__item:not(:first-child) {
+.rate__item {
     max-width: 600px;
 }
 .menu {
@@ -168,6 +165,9 @@
 }
 .clients-arrow {
     bottom: -30px;
+}
+.clients-slider__item {
+    max-width: 500px;
 }
 .clients__information {
     margin-left: 90px;
